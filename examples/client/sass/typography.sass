@@ -1,0 +1,49 @@
+$bodycopy: 'minion-pro', serif
+$headline: 'proxima-nova', sans-serif
+$flag: 'chunk', serif
+
+html
+	font-size: 10px
+
+body
+	font-size: 10px
+	font-family: $bodycopy
+	font-weight: 500
+	line-height: 1.5
+
+h1, h2, h3, h4, h5, h6
+	font-family: $headline
+
+h1
+	font-size: 7.2rem
+
+h2
+	font-size: 6rem
+
+h3
+	font-size: 4.8rem
+
+h4
+	font-size: 4rem
+
+h5
+	font-size: 3.2rem
+
+a, p, div, span
+	font-size: 2rem
+	+breakpoint(sm)
+		font-size: 2.3rem
+
+a
+	color: $yellow
+	font-weight: bold
+	+transition(color .3s) 
+	&:hover, &:focus, &:visited
+		text-decoration: underline
+		color: darken($yellow, 5%)
+
+.flag
+	font-family: $flag
+
+.text-overlay
+	color: $white

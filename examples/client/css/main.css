@@ -1,0 +1,373 @@
+/***
+
+   colors.css v2.0.0
+   http://clrs.cc
+   @mrmrs
+   MIT License
+
+***/
+/*
+
+   SKINS
+   - Backgrounds
+   - Colors
+   - Border colors
+   - SVG fills
+   - SVG Strokes
+
+*/
+/* Backgrounds */
+.bg-navy {
+  background-color: #001f3f; }
+
+.bg-blue {
+  background-color: #0074d9; }
+
+.bg-aqua {
+  background-color: #7fdbff; }
+
+.bg-teal {
+  background-color: #39cccc; }
+
+.bg-olive {
+  background-color: #3d9970; }
+
+.bg-green {
+  background-color: #2ecc40; }
+
+.bg-lime {
+  background-color: #01ff70; }
+
+.bg-yellow {
+  background-color: #ffdc00; }
+
+.bg-orange {
+  background-color: #ff851b; }
+
+.bg-red {
+  background-color: #ff4136; }
+
+.bg-fuchsia {
+  background-color: #f012be; }
+
+.bg-purple {
+  background-color: #b10dc9; }
+
+.bg-maroon {
+  background-color: #85144b; }
+
+.bg-white {
+  background-color: white; }
+
+.bg-gray {
+  background-color: #aaaaaa; }
+
+.bg-silver {
+  background-color: #dddddd; }
+
+.bg-black {
+  background-color: #111111; }
+
+/* Colors */
+.navy {
+  color: #001f3f; }
+
+.blue {
+  color: #0074d9; }
+
+.aqua {
+  color: #7fdbff; }
+
+.teal {
+  color: #39cccc; }
+
+.olive {
+  color: #3d9970; }
+
+.green {
+  color: #2ecc40; }
+
+.lime {
+  color: #01ff70; }
+
+.yellow {
+  color: #ffdc00; }
+
+.orange {
+  color: #ff851b; }
+
+.red {
+  color: #ff4136; }
+
+.fuchsia {
+  color: #f012be; }
+
+.purple {
+  color: #b10dc9; }
+
+.maroon {
+  color: #85144b; }
+
+.white {
+  color: white; }
+
+.silver {
+  color: #dddddd; }
+
+.gray {
+  color: #aaaaaa; }
+
+.black {
+  color: #111111; }
+
+/* Border colors 
+
+   Use with another border utility that sets border-width and style 
+   i.e .border { border-width: 1px; border-style: solid; }     
+*/
+.border--navy {
+  border-color: #001f3f; }
+
+.border--blue {
+  border-color: #0074d9; }
+
+.border--aqua {
+  border-color: #7fdbff; }
+
+.border--teal {
+  border-color: #39cccc; }
+
+.border--olive {
+  border-color: #3d9970; }
+
+.border--green {
+  border-color: #2ecc40; }
+
+.border--lime {
+  border-color: #01ff70; }
+
+.border--yellow {
+  border-color: #ffdc00; }
+
+.border--orange {
+  border-color: #ff851b; }
+
+.border--red {
+  border-color: #ff4136; }
+
+.border--fuchsia {
+  border-color: #f012be; }
+
+.border--purple {
+  border-color: #b10dc9; }
+
+.border--maroon {
+  border-color: #85144b; }
+
+.border--white {
+  border-color: white; }
+
+.border--gray {
+  border-color: #aaaaaa; }
+
+.border--silver {
+  border-color: #dddddd; }
+
+.border--black {
+  border-color: #111111; }
+
+/* Fills for SVG */
+.fill-navy {
+  fill: #001f3f; }
+
+.fill-blue {
+  fill: #0074d9; }
+
+.fill-aqua {
+  fill: #7fdbff; }
+
+.fill-teal {
+  fill: #39cccc; }
+
+.fill-olive {
+  fill: #3d9970; }
+
+.fill-green {
+  fill: #2ecc40; }
+
+.fill-lime {
+  fill: #01ff70; }
+
+.fill-yellow {
+  fill: #ffdc00; }
+
+.fill-orange {
+  fill: #ff851b; }
+
+.fill-red {
+  fill: #ff4136; }
+
+.fill-fuchsia {
+  fill: #f012be; }
+
+.fill-purple {
+  fill: #b10dc9; }
+
+.fill-maroon {
+  fill: #85144b; }
+
+.fill-white {
+  fill: white; }
+
+.fill-gray {
+  fill: #aaaaaa; }
+
+.fill-silver {
+  fill: #dddddd; }
+
+.fill-black {
+  fill: #111111; }
+
+/* Strokes for SVG */
+.stroke-navy {
+  stroke: #001f3f; }
+
+.stroke-blue {
+  stroke: #0074d9; }
+
+.stroke-aqua {
+  stroke: #7fdbff; }
+
+.stroke-teal {
+  stroke: #39cccc; }
+
+.stroke-olive {
+  stroke: #3d9970; }
+
+.stroke-green {
+  stroke: #2ecc40; }
+
+.stroke-lime {
+  stroke: #01ff70; }
+
+.stroke-yellow {
+  stroke: #ffdc00; }
+
+.stroke-orange {
+  stroke: #ff851b; }
+
+.stroke-red {
+  stroke: #ff4136; }
+
+.stroke-fuchsia {
+  stroke: #f012be; }
+
+.stroke-purple {
+  stroke: #b10dc9; }
+
+.stroke-maroon {
+  stroke: #85144b; }
+
+.stroke-white {
+  stroke: white; }
+
+.stroke-gray {
+  stroke: #aaaaaa; }
+
+.stroke-silver {
+  stroke: #dddddd; }
+
+.stroke-black {
+  stroke: #111111; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 10px;
+  font-family: "minion-pro", serif;
+  font-weight: 500;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", sans-serif; }
+
+h1 {
+  font-size: 7.2rem; }
+
+h2 {
+  font-size: 6rem; }
+
+h3 {
+  font-size: 4.8rem; }
+
+h4 {
+  font-size: 4rem; }
+
+h5 {
+  font-size: 3.2rem; }
+
+a, p, div, span {
+  font-size: 2rem; }
+  @media only screen and (min-width: 768px) {
+    a, p, div, span {
+      font-size: 2.3rem; } }
+
+a {
+  color: #ffdc00;
+  font-weight: bold;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s; }
+  a:hover, a:focus, a:visited {
+    text-decoration: underline;
+    color: #e6c600; }
+
+.flag {
+  font-family: "chunk", serif; }
+
+.text-overlay {
+  color: white; }
+
+.jumbo {
+  height: 100vh;
+  padding: 150px 0;
+  position: relative; }
+
+.jumbo-image {
+  background-size: cover; }
+
+.article-meta {
+  padding-top: 100px; }
+
+.name-title {
+  padding-top: 10px; }
+
+.author-title {
+  font-weight: bold; }
+
+.headshot img {
+  border-radius: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: block; }
+
+.article-date {
+  position: absolute;
+  bottom: -25px;
+  right: 20px; }
+  .article-date span {
+    font-size: 1.3rem;
+    color: #aaaaaa;
+    font-family: "proxima-nova", sans-serif; }
+
+.article-content {
+  padding-top: 40px; }
+
+.article-lede {
+  font-style: italic;
+  line-height: 1.5; }
+
+.article-subhead {
+  font-weight: bold;
+  margin: 40px 0 20px 0; }
