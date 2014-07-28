@@ -348,8 +348,32 @@ dl, ul, ol {
 .no-bullets {
   list-style-type: none; }
 
+.btn {
+  font-family: "proxima-nova", sans-serif; }
+
+body {
+  padding-bottom: 50px; }
+
 audio {
   width: 100%; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
 
 .jumbo {
   height: 100vh;
@@ -435,3 +459,33 @@ audio {
   font-family: "proxima-nova", sans-serif; }
   .panel p, .panel-body p {
     font-size: 2rem; }
+
+.letter-container {
+  width: 32%;
+  padding-bottom: 40px; }
+
+.letter {
+  padding: 20px; }
+
+.letter-label {
+  text-transform: uppercase;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem; }
+
+.letter-title {
+  margin-top: 0; }
+
+.letter-summary {
+  display: block; }
+
+.letter-summary p {
+  font-size: 2rem; }
+
+.letter-author {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 2rem; }
+
+.letter-read-more {
+  position: absolute;
+  bottom: 20px; }
