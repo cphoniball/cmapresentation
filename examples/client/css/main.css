@@ -382,7 +382,7 @@ audio {
   .branding span {
     font-size: 4rem; }
 
-.site-navigation {
+.site-navigation, .page-navigation {
   position: absolute;
   right: 20px;
   top: 30%; }
@@ -400,6 +400,32 @@ audio {
     .site-nav-link a:hover {
       color: #ffdc00;
       text-decoration: none; }
+
+.site-footer {
+  background-color: #111111;
+  position: relative;
+  z-index: 5;
+  display: block;
+  top: 100vh;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 2rem; }
+  .site-footer address {
+    font-size: 2rem; }
+  .site-footer a {
+    font-weight: 500; }
+  .site-footer ul, .site-footer ol {
+    list-style-type: none;
+    padding-left: 0; }
+
+.footer-search {
+  color: black;
+  position: relative; }
+  .footer-search i.glyphicon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: black; }
 
 .flex-container {
   display: -webkit-box;
@@ -422,7 +448,10 @@ audio {
 .jumbo {
   height: 100vh;
   padding: 150px 0;
-  position: relative; }
+  position: fixed;
+  z-index: 0;
+  right: 0;
+  left: 0; }
 
 .jumbo-image {
   background-size: cover; }
@@ -468,6 +497,12 @@ audio {
     color: #aaaaaa;
     font-family: "proxima-nova", sans-serif; }
 
+.article-container {
+  position: relative;
+  z-index: 5;
+  background-color: white;
+  top: 100vh; }
+
 .article-content {
   padding-top: 40px; }
   .article-content img {
@@ -506,6 +541,10 @@ audio {
 
 .letter-container {
   width: 32%;
+  padding-bottom: 40px;
+  position: relative; }
+
+.letters-to-the-editor {
   padding-bottom: 40px; }
 
 .letter {

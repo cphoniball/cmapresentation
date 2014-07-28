@@ -18,7 +18,7 @@
 	span
 		font-size: 4rem
 
-.site-navigation
+.site-navigation, .page-navigation
 	position: absolute
 	right: 20px
 	top: 30%
@@ -37,6 +37,34 @@
 			color: $yellow
 			text-decoration: none
 
+// footer styles
+ 
+.site-footer
+	background-color: $black
+	position: relative
+	z-index: 5
+	display: block
+	top: 100vh
+	color: $white
+	font-family: $sans-serif
+	font-size: 2rem
+	address
+		font-size: 2rem
+	a
+		font-weight: 500
+	ul, ol
+		list-style-type: none
+		padding-left: 0 
+
+.footer-search
+	color: black
+	position: relative
+	i.glyphicon
+		position: absolute
+		right: 10px
+		top: 5px
+		color: black
+
 // main styles
 .flex-container
 	+display(flex)
@@ -45,7 +73,10 @@
 .jumbo
 	height: 100vh
 	padding: 150px 0
-	position: relative
+	position: fixed
+	z-index: 0
+	right: 0 
+	left: 0
 
 .jumbo-image
 	background-size: cover
@@ -91,6 +122,11 @@
 		color: $gray
 		font-family: $headline
 
+.article-container
+	position: relative
+	z-index: 5
+	background-color: $white
+	top: 100vh
 
 .article-content	
 	padding-top: 40px
@@ -131,6 +167,10 @@
 // letters to the editor
 .letter-container
 	width: 32%
+	padding-bottom: 40px
+	position: relative
+
+.letters-to-the-editor
 	padding-bottom: 40px
 
 .letter

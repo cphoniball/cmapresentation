@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -24,7 +25,7 @@
 			Inside<span class="yellow">Vandy</span>.com
 		</div>
 		<div class="site-navigation">
-			<ul class="list-style-type">
+			<ul class="site-navigation-list">
 				<li class="site-nav-link"><a href="#">About</a></li>
 				<li class="site-nav-link"><a href="#">News</a></li>
 				<li class="site-nav-link"><a href="#">Life</a></li>
@@ -32,6 +33,13 @@
 				<li class="site-nav-link"><a href="#">Sports</a></li>
 				<li class="site-nav-link"><a href="#">Advertising</a></li>
 				<li class="site-nav-link"><a href="#">Special Projects</a></li>
+			</ul>
+			<ul class="page-navigation-list hidden">
+				<li class="site-nav-link"><a href="#disordered-eating">Disordered eating</a></li>
+				<li class="site-nav-link"><a href="#resources">Vanderbilt's resources</a></li>
+				<li class="site-nav-link"><a href="#colleges">Other colleges</a></li>
+				<li class="site-nav-link"><a href="#enough">Is it enough?</a></li>
+				<li class="site-nav-link"><a href="#community">From the community</a></li>
 			</ul>
 		</div>
 	</header>
@@ -78,7 +86,7 @@
 
 			<div class="article-content-body">
 				<div class="article-section">
-					<h4 class="article-subhead">Disordered eating in college</h4>
+					<h4 class="article-subhead" id="disordered-eating">Disordered eating in college</h4>
 					<p>
 						The Eating Disorder Coalition of Tennessee hosted a charity walk at Centennial Park on Saturday, as part of the National Eating Disorder Awareness Week, benefitting the National Eating Disorder Association (NEDA). It is a particularly important cause to junior Bailey Monarch, who participated in the event and helped raise more than $1,300 for the organization.
 						<div class="person-info hidden-xs hidden-sm">
@@ -127,7 +135,7 @@
 				</div>
 
 				<div class="article-section">
-					<h4 class="article-subhead">Vanderbilt's resources for eating disorders</h4>
+					<h4 class="article-subhead" id="resources">Vanderbilt's resources for eating disorders</h4>
 					<p>Cindy Green, the head of the eating disorder treatment team at the Psychological Counseling Center, feels that the best thing would be to intervene when the illness is in its developmental stages.
 					<div class="person-info hidden-xs hidden-sm">
 						<div class="headshot col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-1">
@@ -172,7 +180,7 @@
 				</div>
 
 				<div class="article-section">
-					<h4 class="article-subhead">Disordered eating across colleges</h4>
+					<h4 class="article-subhead" id="colleges">Disordered eating across colleges</h4>
 					
 					<p>The culture of disordered eating is not unique to Vanderbilt. Among the throngs of college girls in sweatshirts and leggings on the Saturday morning NEDA walk were Kathleen Trotter and Aven Chadwell, two Belmont students and survivors of eating disorders who had come to support NEDA because of their own on-campus advocacy work.
 					<div class="person-info hidden-xs hidden-sm">
@@ -209,7 +217,7 @@
 				</div>
 
 				<div class="article-section">
-					<h4 class="article-subhead">Problems with Vanderbilt's resources</h4>
+					<h4 class="article-subhead" id="enough">Problems with Vanderbilt's resources</h4>
 					<p>Bailey Monarch opined that she does not consider Vanderbilt’s resources adequate for students struggling with eating disorders.</p>
 					<p>“Honestly, I don’t think that the counselors at the PCC are qualified to deal with something as complex as an eating disorder, and, a lot of times, I know (patients) can only see the counselors at the PCC once every other week. A lot of times with eating disorders people need to see counselors at least once a week, maybe several times a week, because the beginning stages of getting treatment, there’s a lot of support that’s needed and a lot of things that need to be addressed,” Monarch said.</p>
 
@@ -303,16 +311,15 @@
 		</div>
 
 		<!-- 2 columns left over for asides... hide on smaller screens --> 
-		<div class="col-sm-2 article-asides">
-			
+		<div class="col-sm-2 article-asides">			
 		</div>
 
 	</div><!-- end row --> 
 </div><!-- end fluid container --> 
 
-<div class="container letters-to-the-editor">
+<div class="container-fluid article-container letters-to-the-editor">
 	<div class="row">
-		<header class="text-center">
+		<header class="text-center" id="community">
 			<h3>From the community</h3>	
 		</header>
 		
@@ -321,7 +328,7 @@
 				<p>Following the publishing of this article, The Hustler received several letters from Vanderbilt community members in regards to treating eating disorders and other mental health problems at Vanderbilt. </p>
 			</div>
 
-			<div class="col-xs-12 col-sm-12">
+			<div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
 				<div class="flex-container">
 					<div class="letter-container bg-warning">
 						<div class="letter">
@@ -379,6 +386,53 @@
 		</div>
 
 	</div>
-</div>
+</div><!-- end letter to the editor -->
+
+<footer class="container-fluid site-footer">
+	<div class="row">
+		<div class="col-md-3">
+			<h5>Sections</h5>
+			<ul class="footer-navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">News</a></li>	
+				<li><a href="#">Life</a></li>
+				<li><a href="#">Opinion</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Multimedia</a></li>
+				<li><a href="#">Special Projects</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h5>Services</h5>
+			<ul class="footer-navigation">
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Advertise</a></li>	
+				<li><a href="#">Submission forms</a></li>
+				<li><a href="#">Site index</a></li>
+				<li><a href="#">Add search toolbar</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h5>Contact Us</h5>
+			<a href="http://vanderbilthustler.com">vanderbilthustler.com</a>
+
+			<address>
+				<strong>Phone:</strong> 555-224-2123 <br>	
+				<strong>Email:</strong> editor@insidevandy.com <br>	
+				<strong>Address:</strong> 2301 Vanderbilt Place, <br>
+																	VU Station B 351669
+																	Nashville, TN 37235
+			</address>
+		</div>
+		<div class="col-md-3">
+			<h5>Search</h5>
+			<div class="form-group footer-search">
+				<input type="text" class="form-control"><i class="glyphicon glyphicon-search"></i>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
