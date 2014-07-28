@@ -42,3 +42,21 @@
 .article-subhead
 	font-weight: bold
 	margin: 40px 0 20px 0 
+
+.article-section p 
+	position: relative // allows positioning asides
+
+.aside
+	+breakpoint(md)
+		position: absolute
+		font-size: 1.6rem
+		font-family: $sans-serif
+		margin-top: -25%
+	&.right
+		+breakpoint(md)
+			left: 100%
+			margin-left: 20px
+	&.left
+		+breakpoint(md)
+			right: 100%
+			margin-right: 20px
