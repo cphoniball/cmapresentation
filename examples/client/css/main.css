@@ -357,6 +357,50 @@ body {
 audio {
   width: 100%; }
 
+.site-header {
+  padding: 20px;
+  background-color: #111111;
+  position: fixed;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s; }
+
+.site-header.headroom--unpinned {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px); }
+
+.branding {
+  font-family: "chunk", serif;
+  font-size: 4rem;
+  color: white; }
+  .branding span {
+    font-size: 4rem; }
+
+.site-navigation {
+  position: absolute;
+  right: 20px;
+  top: 30%; }
+
+.site-nav-list {
+  list-style-type: none; }
+
+.site-nav-link {
+  display: inline-block;
+  margin-right: 10px; }
+  .site-nav-link a {
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500; }
+    .site-nav-link a:hover {
+      color: #ffdc00;
+      text-decoration: none; }
+
 .flex-container {
   display: -webkit-box;
   display: -moz-box;
