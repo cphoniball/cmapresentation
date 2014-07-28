@@ -348,6 +348,9 @@ dl, ul, ol {
 .no-bullets {
   list-style-type: none; }
 
+audio {
+  width: 100%; }
+
 .jumbo {
   height: 100vh;
   padding: 150px 0;
