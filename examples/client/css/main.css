@@ -323,6 +323,18 @@ a {
     text-decoration: underline;
     color: #e6c600; }
 
+blockquote {
+  font-family: "minion-pro", serif;
+  font-style: italic;
+  border-left: none;
+  font-size: 2.8rem; }
+  blockquote cite {
+    font-size: 2rem;
+    font-family: "proxima-nova", sans-serif;
+    text-align: right;
+    display: block;
+    color: #aaaaaa; }
+
 .flag {
   font-family: "chunk", serif; }
 

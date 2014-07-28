@@ -1,6 +1,8 @@
 $bodycopy: 'minion-pro', serif
 $headline: 'proxima-nova', sans-serif
 $flag: 'chunk', serif
+$serif: $bodycopy
+$sans-serif: $headline
 
 html
 	font-size: 10px
@@ -42,8 +44,22 @@ a
 		text-decoration: underline
 		color: darken($yellow, 5%)
 
+blockquote
+	font-family: $serif
+	font-style: italic
+	border-left: none
+	font-size: 2.8rem
+	cite
+		font-size: 2rem
+		font-family: $sans-serif
+		text-align: right
+		display: block
+		color: $gray
+
 .flag
 	font-family: $flag
 
 .text-overlay
 	color: $white
+
+
