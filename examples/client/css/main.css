@@ -356,14 +356,31 @@ dl, ul, ol {
 .jumbo-image {
   background-size: cover; }
 
-.article-meta {
-  padding-top: 100px; }
+.written-by {
+  font-size: 2rem; }
 
-.name-title {
-  padding-top: 10px; }
+.article-meta {
+  padding-top: 100px;
+  font-family: "proxima-nova", sans-serif; }
 
 .author-title {
   font-weight: bold; }
+
+.person-info {
+  position: absolute;
+  right: 100%;
+  width: 50%;
+  margin-top: -15%;
+  font-family: "proxima-nova", sans-serif; }
+  .person-info .person-name-title {
+    padding-top: 10px; }
+  .person-info .name, .person-info .title {
+    font-size: 2rem; }
+  .person-info .title {
+    font-style: italic; }
+  @media only screen and (max-width: 1200px) {
+    .person-info {
+      text-align: center; } }
 
 .headshot img {
   border-radius: 50%;

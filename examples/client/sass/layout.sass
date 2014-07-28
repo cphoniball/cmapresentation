@@ -7,14 +7,30 @@
 	background-size: cover
 
 // article styles
+.written-by
+	font-size: 2rem
+
 .article-meta
 	padding-top: 100px
-
-.name-title
-	padding-top: 10px
+	font-family: $sans-serif
 
 .author-title
 	font-weight: bold
+
+.person-info
+	position: absolute
+	right: 100%
+	width: 50%
+	margin-top: -15%
+	font-family: $sans-serif
+	.person-name-title	
+		padding-top: 10px
+	.name, .title
+		font-size: 2rem
+	.title
+		font-style: italic
+	+below(lg)
+		text-align: center
 
 .headshot	img
 	border-radius: 50%
