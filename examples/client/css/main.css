@@ -307,10 +307,10 @@ h4 {
 h5 {
   font-size: 3.2rem; }
 
-a, p, div, span {
+p, div, span {
   font-size: 2rem; }
   @media only screen and (min-width: 768px) {
-    a, p, div, span {
+    p, div, span {
       font-size: 2.3rem; } }
 
 a {
@@ -328,18 +328,25 @@ blockquote {
   font-style: italic;
   border-left: none;
   font-size: 2.8rem; }
-  blockquote cite {
-    font-size: 2rem;
-    font-family: "proxima-nova", sans-serif;
-    text-align: right;
-    display: block;
-    color: #aaaaaa; }
+
+cite {
+  font-size: 2rem;
+  font-family: "proxima-nova", sans-serif;
+  text-align: right;
+  display: block;
+  color: #aaaaaa; }
 
 .flag {
   font-family: "chunk", serif; }
 
 .text-overlay {
   color: white; }
+
+dl, ul, ol {
+  font-size: 2rem; }
+
+.no-bullets {
+  list-style-type: none; }
 
 .jumbo {
   height: 100vh;
@@ -375,6 +382,8 @@ blockquote {
 
 .article-content {
   padding-top: 40px; }
+  .article-content img {
+    max-width: 100%; }
 
 .article-lede {
   font-style: italic;
@@ -401,3 +410,8 @@ blockquote {
   .aside.left {
     right: 100%;
     margin-right: 20px; } }
+
+.panel, .panel-body {
+  font-family: "proxima-nova", sans-serif; }
+  .panel p, .panel-body p {
+    font-size: 2rem; }
