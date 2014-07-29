@@ -3,9 +3,14 @@ var express = require('express'),
 		app = express(); 
 
 var PORT = 1337; 
+var hostname = 'http://localhost:'; 
+if (process.env.PRODUCTION) {
+	PORT = 80; 
+	hostname = 'http://cma.chrishoniball.com';
+}
 
 // application locals
-app.locals.baseUrl = 'http://localhost:' + PORT; 
+app.locals.baseUrl = process.env.PRODUCTION ? hostname : hostname + PORT; 
 
 // appliation settings
 app.set('view engine', 'ejs');
