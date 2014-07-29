@@ -55,6 +55,12 @@ $(document).ready(function() {
 		$('.nav-wrapper').toggleClass('active'); 
 	}); 
 
-
+	// load in images only when necessary 
+	if ($(window).width() > 992) {
+		$('.headshot-img').each(function() {
+			var url = $(this).attr('data-src'); 
+			$(this).attr('src', url); 
+		}); 
+	} 
 
 }); 
