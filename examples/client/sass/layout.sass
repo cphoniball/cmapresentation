@@ -13,22 +13,45 @@
 
 .branding
 	font-family: $flag
-	font-size: 4rem
+	font-size: 2.8rem
 	color: $white
+	margin-top: 10px
 	span
+		font-size: 2.8rem
+	+breakpoint(sm)
 		font-size: 4rem
+		margin-top: 0
+		span
+			font-size: 4rem
 
+.nav-wrapper
+	+breakpoint(md)
+		display: none
+	+below(md)
+		position: fixed
+		top: 120px
+		right: 50px
+		background-color: $black
+		padding: 20px
+		+transform(translateY(-400px))
+		+transition(transform .3s)
+	&.active
+		+below(md)
+			+transform(translateY(0))
+	
 .site-navigation, .page-navigation
 	position: absolute
 	right: 20px
 	top: 30%
 
-.site-nav-list
+.site-navigation-list, .page-navigation-list
 	list-style-type: none
+	padding-left: 0
 
 .site-nav-link
-	display: inline-block
-	margin-right: 10px
+	+breakpoint(md)
+		display: inline-block
+		margin-right: 10px
 	a
 		color: white
 		font-family: $sans-serif
@@ -66,9 +89,14 @@
 		color: black
 
 // main styles
+.main-content-wrapper	
+	position: relative
+	z-index: 5
+
 .flex-container
-	+display(flex)
-	+justify-content(space-between)
+	+breakpoint(sm)
+		+display(flex)
+		+justify-content(space-between)
 
 .jumbo
 	height: 100vh
@@ -166,9 +194,12 @@
 
 // letters to the editor
 .letter-container
-	width: 32%
-	padding-bottom: 40px
-	position: relative
+	+below(sm)
+		margin-bottom: 20px
+	+breakpoint(sm)
+		width: 32%
+		padding-bottom: 40px
+		position: relative
 
 .letters-to-the-editor
 	padding-bottom: 40px
@@ -196,5 +227,6 @@
 	font-size: 2rem
 
 .letter-read-more
-	position: absolute
-	bottom: 20px
+	+breakpoint(sm)
+		position: absolute
+		bottom: 20px

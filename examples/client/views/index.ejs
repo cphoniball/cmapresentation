@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>CMA Presentation</title>
 
+	<!-- responsive meta tag --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="<%= baseUrl %>/packages/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<%= baseUrl %>/css/main.css">
 	
@@ -25,22 +28,27 @@
 			Inside<span class="yellow">Vandy</span>.com
 		</div>
 		<div class="site-navigation">
-			<ul class="site-navigation-list">
-				<li class="site-nav-link"><a href="#">About</a></li>
-				<li class="site-nav-link"><a href="#">News</a></li>
-				<li class="site-nav-link"><a href="#">Life</a></li>
-				<li class="site-nav-link"><a href="#">Opinion</a></li>
-				<li class="site-nav-link"><a href="#">Sports</a></li>
-				<li class="site-nav-link"><a href="#">Advertising</a></li>
-				<li class="site-nav-link"><a href="#">Special Projects</a></li>
-			</ul>
-			<ul class="page-navigation-list hidden">
-				<li class="site-nav-link"><a href="#disordered-eating">Disordered eating</a></li>
-				<li class="site-nav-link"><a href="#resources">Vanderbilt's resources</a></li>
-				<li class="site-nav-link"><a href="#colleges">Other colleges</a></li>
-				<li class="site-nav-link"><a href="#enough">Is it enough?</a></li>
-				<li class="site-nav-link"><a href="#community">From the community</a></li>
-			</ul>
+			<div class="nav-wrapper">
+				<ul class="site-navigation-list">
+					<li class="site-nav-link"><a href="#">About</a></li>
+					<li class="site-nav-link"><a href="#">News</a></li>
+					<li class="site-nav-link"><a href="#">Life</a></li>
+					<li class="site-nav-link"><a href="#">Opinion</a></li>
+					<li class="site-nav-link"><a href="#">Sports</a></li>
+					<li class="site-nav-link"><a href="#">Advertising</a></li>
+					<li class="site-nav-link"><a href="#">Special Projects</a></li>
+				</ul>
+				<ul class="page-navigation-list hidden">
+					<li class="site-nav-link"><a href="#disordered-eating">Disordered eating</a></li>
+					<li class="site-nav-link"><a href="#resources">Vanderbilt's resources</a></li>
+					<li class="site-nav-link"><a href="#colleges">Other colleges</a></li>
+					<li class="site-nav-link"><a href="#enough">Is it enough?</a></li>
+					<li class="site-nav-link"><a href="#community">From the community</a></li>
+				</ul>
+			</div>
+			<button class="mobile-nav-menu btn btn-warning visible-xs visible-sm">
+				<i class="glyphicon glyphicon-align-justify"></i>&nbsp;Menu
+			</button>
 		</div>
 	</header>
 
@@ -53,7 +61,7 @@
 	<div class="jumbo jumbo-image" style="background-image: url('<%= baseUrl %>/img/eating_header.jpg');">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5 text-overlay" data-stellar-ratio=".8">
+				<div class="col-sm-8 col-md-5 text-overlay" data-stellar-ratio=".8">
 					<h1 class="flag">A culture of disordered eating</h1>
 					<h3>How college students gain control</h3>
 				</div>				
@@ -65,6 +73,7 @@
 		</div>		
 	</div>
 
+<div class="main-content-wrapper">
 	<div class="container-fluid article-container">
 		<div class="row">
 			<!-- article meta information --> 
@@ -412,7 +421,7 @@
 			</div>
 		</div>
 	</div>
-
 </footer>
+</div><!-- end .main-content-wrapper --> 
 </body>
 </html>

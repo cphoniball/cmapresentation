@@ -49,6 +49,12 @@ $(document).ready(function() {
 
 	$(document).scroll(changeNavItems); 
 
+	// mobile navigation click handler
+
+	$('.mobile-nav-menu').click(function(event) {
+		$('.nav-wrapper').toggleClass('active'); 
+	}); 
+
 
 
 }); 

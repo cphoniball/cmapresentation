@@ -17,24 +17,32 @@ h1, h2, h3, h4, h5, h6
 	font-family: $headline
 
 h1
-	font-size: 7.2rem
+	font-size: 5.2rem
+	+breakpoint(sm)
+		font-size: 7.2rem
 
 h2
-	font-size: 6rem
+	font-size: 4rem
+	+breakpoint(sm)
+		font-size: 6rem
 
 h3
-	font-size: 4.8rem
+	font-size: 3.2rem
+	+breakpoint(sm)
+		font-size: 4.8rem
 
 h4
 	font-size: 4rem
 
 h5
-	font-size: 3.2rem
+	font-size: 2.4rem
+	+breakpoint(sm)
+		font-size: 3.2rem
 
 p, div, span
-	font-size: 2rem
+	font-size: 1.8rem
 	+breakpoint(sm)
-		font-size: 2.3rem
+		font-size: 2.1rem
 
 a
 	color: $yellow
@@ -48,10 +56,10 @@ blockquote
 	font-family: $serif
 	font-style: italic
 	border-left: none
-	font-size: 2.8rem
+	font-size: 2.6rem
 
 cite
-	font-size: 2rem
+	font-size: 1.8rem
 	font-family: $sans-serif
 	text-align: right
 	display: block
