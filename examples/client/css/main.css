@@ -363,9 +363,6 @@ dl, ul, ol {
 .btn {
   font-family: "proxima-nova", sans-serif; }
 
-body {
-  padding-bottom: 50px; }
-
 audio {
   width: 100%; }
 
@@ -453,7 +450,6 @@ audio {
   position: relative;
   z-index: 5;
   display: block;
-  top: 100vh;
   color: white;
   font-family: "proxima-nova", sans-serif;
   font-size: 2rem; }
@@ -549,11 +545,13 @@ audio {
     color: #aaaaaa;
     font-family: "proxima-nova", sans-serif; }
 
+.main-content-wrapper {
+  padding-top: 100vh; }
+
 .article-container {
   position: relative;
   z-index: 5;
-  background-color: white;
-  top: 100vh; }
+  background-color: white; }
 
 .article-content {
   padding-top: 40px; }
