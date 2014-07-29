@@ -447,7 +447,7 @@ audio {
 
 .jumbo {
   height: 100vh;
-  padding: 150px 0;
+  padding-top: 150px;
   position: fixed;
   z-index: 0;
   right: 0;

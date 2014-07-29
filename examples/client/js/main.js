@@ -1,11 +1,27 @@
 $(document).ready(function() {
 
+	// headroom initialization
 	var header = document.querySelector('.site-header'); 
 	var headroom = new Headroom(header, {
 		offset: $(window).height() + 100, 
 		tolerance: 15
 	}); 
 	headroom.init(); 
+
+	// stellar initialization
+
+	// position property plugin from https://gist.github.com/haydenbleasel/9301427
+	$.stellar.positionProperty.transfade = {
+	  setPosition: function(element, newLeft, originalLeft, newTop, originalTop) {
+	    var distance = newTop - originalTop;
+	    var rate = $(window).height() / 5;
+	    element.css('transform', 'translate3d(0, ' + distance + 'px, 0').css('opacity', 1 - (distance / rate));
+	  }
+	};
+
+	$.stellar({
+		positionProperty: 'transfade'
+	});
 
 	function debounce(func, wait, immediate) {
 		var timeout;
